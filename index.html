@@ -28,12 +28,22 @@
         p {
             color: #666;
         }
+        .spin {
+            display: inline-block;
+            animation: spin 5s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            50% { transform: rotate(360deg); }
+            100% { transform: rotate(0deg); }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Welcome to RoboAlert</h1>
-        <p>Your premier robot alert service. 🤖</p>
+        <p>Your premier robot alert service. <span class="spin">🤖</span></p>
+       
     </div>
 </body>
 </html>
